@@ -1,0 +1,6 @@
+mongo
+(require 'consumers.feature-flag)
+(in-ns 'consumers.feature-flag)
+(feature-change {"domain" "sbox-test-security" "feature" "smart_intents" "status" true "value" -1})
+(toggle-features "sbox-test-security" {"hs_api_rpm"})
+(toggle-features "sbox-test-security" {"hs_api_rpm" true})
